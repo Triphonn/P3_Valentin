@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,EAAE,IAAI,CAAC;EACT,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;EAEhB,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,UAAU;EAC1B,kBAAkB,EAAE,KAAK;EACzB,mBAAmB,EAAE,QAAQ;CAC9B;;AAED,UAAU,CAAV,UAAU;EACR,EAAE;IACA,QAAQ,EAAE,OAAO",
+    "sources": [
+        "antiscroll.scss"
+    ],
+    "names": [],
+    "file": "antiscroll.css"
+}

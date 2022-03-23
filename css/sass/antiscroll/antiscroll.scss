@@ -1,0 +1,16 @@
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+
+  animation-delay: 3500ms;
+  animation-name: antiscroll;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes antiscroll {
+  to{
+    overflow: visible;
+  }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Import icones font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- Import style css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Import animation en sass -->
+        <link rel="stylesheet" href="css/sass/anim.css" />
+        <!-- Import normalize.css -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Import antiscroll.css pour le loading de la page d'accueil -->
+        <link rel="stylesheet" href="css/sass/antiscroll/antiscroll.css" />
+
+        <!-- Import fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
+        <title>Oh My Food 2022</title>
+    </head>
+    <body>
+        <!-- Loading site -->
+        <div class="loadingspinner flex">
+            <div class="loadingio-spinner-spin-1w873ivxjim"><div class="ldio-2jha816hf44">
+                <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+                </div></div>
+            </div>
+        <!-- Header du site -->
+        <header>
+            <!-- Logo du site -->
+            <div class="logo delayanimaccueilbase flex">
+                <img src="images/logo/ohmyfood.png" alt="">
+            </div>
+            <!-- Position des restaurants disponibles -->
+            <div class="position delayanimaccueil flex">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="roboto">
+                    Paris, Belleville
+                </div>
+            </div>
+            <!-- Description du site -->
+            <article class="description delayanimaccueil1 flex roboto">
+                <h1>
+                    Réservez le menu qui vous convient
+                </h1>
+
+                <p>
+                    Découvrez des restaurants d'exception, sélectionnés par nos soins.
+                </p>
+                <!-- Bouton explorer nos restaurants -->
+                <div class="search">
+                    <a href="#" class= "text">Explorer nos restaurants</a>
+                </div>
+            </article>
+        </header>
+        <main>
+            <!-- Explication du fonctionnement du site -->
+            <section class="fonctionnement delayanimaccueil2 flex roboto">
+                <h2>Fonctionnement</h2>
+                <div class="allblocfonction flex">
+                    
+                    <div class="blocfonction flex"><!-- Bloc fonction du site -->
+                        <p>
+                            <span>1</span>
+                        </p>
+                        <i class="fas fa-mobile-alt iconef"></i>
+                        <h3 class="black textfonction">Choisissez un restaurant</h3>
+                    </div>
+
+                    <div class="blocfonction flex">
+                        <p>
+                            <span>2</span>
+                        </p>
+                        <i class="fas fa-list iconef"></i>
+                        <h3 class="black textfonction">Composez votre menu</h3>
+                    </div>
+
+                    <div class="blocfonction flex">
+                        <p>
+                            <span>3</span>
+                        </p>
+                        <i class="fas fa-store iconef iconef2"></i>
+                        <h3 class="black textfonction">Dégustez au restaurant</h3>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- H2 rajouté et mis en display: none; pour pouvoir le décaler sur le desktop -->
+            <h2 class="h2resto delayanimaccueil3 roboto none">Restaurants</h2>
+
+            <!-- Bloc des restaurants -->
+            <section class="restaurants delayanimaccueil3 flex roboto">
+                <h2>Restaurants</h2>
+                <!-- Carte descriptif du restaurants -->
+                <article class="restohover delayanimaccueil4">
+                    <a href="lapalettedugout.html">
+                        <div class="blocresto marginresto">
+                            <img src="images/restaurants/restau.jpg" alt="Image du restaurant La palette du goût">
+                            <div class="nouveau roboto"><!-- Bloc pour montrer à l'utilisateur si le restaurant est nouveau -->
+                                <p>Nouveau</p>
+                            </div>
+                            <div class="descriptionresto flex roboto">
+                                    <h3>La palette du goût</h3>
+                                <div>
+                                    Ménilmontant
+                                </div>
+                            </div>
+                            <div class="iconeheart"><!-- Icone coeur pour mettre en fav son restaurant favoris -->
+                                <i class="far fa-heart heart1"></i>
+                                <i class="fas fa-heart heart2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Carte descriptif du restaurants -->
+                <article class="restohover delayanimaccueil5">
+                    <a href="lanoteenchantee.html">
+                        <div class="blocresto">
+                            <img src="images/restaurants/restau2.jpg" alt="Image du restaurant La note enchantée">
+                            <div class="nouveau roboto"><!-- Bloc pour montrer à l'utilisateur si le restaurant est nouveau -->
+                                <p>Nouveau</p>
+                            </div>
+                            <div class="descriptionresto flex roboto">
+                                    <h3>La note enchantée</h3>
+                                <div>
+                                    Charonne
+                                </div>
+                            </div>
+                            <div class="iconeheart"><!-- Icone coeur pour mettre en fav son restaurant favoris -->
+                                <i class="far fa-heart heart1"></i>
+                                <i class="fas fa-heart heart2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Carte descriptif du restaurants -->
+                <article class="restohover delayanimaccueil6">
+                    <a href="alafrancaise.html">
+                        <div class="blocresto">
+                            <img src="images/restaurants/restau3.jpg" alt="Image du restaurant À la française">
+                            <div class="descriptionresto flex widthresto roboto">
+                                    <h3>À la française</h3>
+                                <div>
+                                    Cité rouge
+                                </div>
+                            </div>
+                            <div class="iconeheart"><!-- Icone coeur pour mettre en fav son restaurant favoris -->
+                                <i class="far fa-heart heart1"></i>
+                                <i class="fas fa-heart heart2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Carte descriptif du restaurants -->
+                <article class="restohover delayanimaccueil7">
+                    <a href="ledelicedessens.html">
+                        <div class="blocresto">
+                            <img src="images/restaurants/restau4.jpg" alt="Image du restaurant Le délice des sens">
+                            <div class="descriptionresto flex widthresto roboto">
+                                    <h3>Le délice des sens</h3>
+                                <div>
+                                    Folie-Méricourt
+                                </div>
+                            </div>
+                            <div class="iconeheart"><!-- Icone coeur pour mettre en fav son restaurant favoris -->
+                                <i class="far fa-heart heart1"></i>
+                                <i class="fas fa-heart heart2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+        
+        <!-- Footer du site -->
+        <footer>
+            <div class="footer delayanimaccueil8">
+                <h2 class="shrikhand">ohmyfood</h2>
+                <div class="footer-margin footer-taille flex">
+                    <div class="textfooter2">
+                        <i class="fas fa-utensils"></i>
+                        <a href="#" class="footer-color roboto footer-margin2">Proposer un restaurant</a>
+                    </div>
+
+                    <div class="textfooter2">
+                        <i class="fas fa-hands-helping"></i>
+                        <a href="#" class="footer-color roboto footer-margin2">Devenir partenaire</a>
+                    </div>
+
+                    <div class="textfooter2">
+                        <a href="#" class="footer-color roboto">Mentions légales</a>
+                    </div>
+
+                    <div class="textfooter2">
+                        <a href="mailto:contact.ohmyfoodpro@gmail.com" class="footer-color roboto">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="textfooter2 footer-margin3 roboto">
+                <p>© OhMyFood 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,631 @@
+/* Class réutilisables */
+
+.flex{
+    display: flex;
+}
+
+.none{
+  display: none;
+}
+
+.shrikhand{
+    font-family: 'Shrikhand';
+}
+
+.roboto{
+    font-family: 'Roboto';
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Loading de la page d'accueil */
+
+.loadingspinner{
+  z-index: 1;
+  position: fixed; top: 0; left: 0; right: 0;
+  opacity: 0.9;
+  background-color: #ffffff;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Fix bug Firefox */
+main{
+  background: #ffffff;
+}
+
+.black{
+  color: black;
+}
+
+header{
+  background: #ffffff;
+}
+
+body{
+  background: #ffffff;
+}
+
+/* Logo */
+
+.logo img{
+    width: 168px;
+    padding: 20px;
+}
+
+.logoresto img{
+  width: 168px;
+  padding: 20px;
+}
+
+.logo{
+    z-index: 1;
+    background: #ffffff;;
+    position: fixed; top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+    justify-content: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logoresto{
+  width: 100%;
+  height: 70px;
+  margin-top: -46px;
+  justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.logoreturn{ /* Bouton retour à l'accueil sur les pages des restaurants */
+  z-index: 1;
+  background: #ffffff;;
+  position: fixed; top: 0; left: 0; right: 0;
+  flex-direction: row;
+}
+
+.return{
+  font-size: 20px !important;
+  color: black;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+/* Position */
+
+.position{
+    margin-top: 72px;
+    box-shadow: 0 0 10px #c1c1c1;
+    background: #e6e6e6;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0 15px 0;
+}
+
+.position i{
+  color: black;
+}
+
+.position div{
+    color: #505050;
+    font-weight: 600;
+}
+
+/* Description de OhMyFood */
+
+.description{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: #f3f3f3;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.description h1{
+    color: black;
+    font-size: 25px;
+    padding: 0 50px 0 50px;
+    font-weight: 800;
+}
+
+.description p{
+    color: black;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Bouton "Explorer nos restaurants" */
+
+.search {
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 200px;
+    height: 50px;
+    position: relative; top: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 25px;
+    box-shadow: 0 0 10px #c1c1c1;
+}
+
+.search a{
+    text-decoration: none;
+    color: white;
+    position: relative; top: 15px;
+}
+
+/* Bloc fonctionnement */
+
+.fonctionnement{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 20px 75px 20px;
+    gap: 25px;
+}
+
+.allblocfonction{
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.fonctionnement h2{
+  color: black;
+}
+
+.blocfonction{
+    flex-direction: row;
+    width: 335px;
+    gap: 20px;
+    background: #f5f5f5;
+    font-weight: 700;
+    padding: 25px 0 0 0;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 2px #e7e7e7;
+}
+
+.blocfonction p{
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #9356DC;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.blocfonction span{
+  position: relative; top: 4px;
+}
+
+.textfonction{
+    cursor: default;
+    position: relative;
+    top: -10px;
+    font-size: 16px;
+}
+
+.blocfonction i{
+    width: 20px;
+    color: gray;
+    font-size: 20px !important;
+    position: relative; top: 5px;
+    padding-right: 5px;
+}
+
+/* Bloc des restaurants */
+
+.restaurants{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 20px 75px 20px;
+  background: #f3f3f3;
+  gap: 20px;
+}
+
+.restaurants h2{
+  color: black;
+}
+
+.restaurants article{
+  width: 100%;
+  text-decoration: none;
+}
+
+.marginresto{
+  margin-top: -20px;
+}
+
+.blocresto{
+  width: 100%;
+  height: 240px;
+  box-sizing: border-box;
+  background-color: #ffffff;;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 7px #c1c1c1;
+}
+
+.blocresto img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* Pages des restaurants */
+
+.lapalettedugout{/* Main bloc */
+  margin-top: 70px;
+  padding-bottom: 20px;
+  background-color: #f3f3f3;
+}
+
+.backimgresto img{/* Insert image */
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.titremenuresto{/* Titre des restaurants */
+  flex-direction: row;
+  width: 70%;
+}
+.menuresto h2{
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 550;
+  color: black;
+}
+
+.menuresto{/* Bloc du menu des restaurants */
+  flex-direction: column;
+  position: relative; bottom: 50px;
+  border-radius: 35px 35px 0 0;
+  background-color: #f3f3f3;
+}
+
+.titreentree{/* Titre entrée/plat/dessert */
+  width: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 3px solid #99E2D0;
+  color: black;
+}
+
+.entreemenuresto{/* Bloc des entrées/plats/desserts */
+  overflow: hidden;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 0 5px 0 5px;
+  gap: 20px;
+}
+
+.margintopresto{
+  margin-top: -20px;
+}
+
+.carteresto{/* Bloc de la carte des restaurants */
+  flex-direction: column;
+  padding: 25px 0px 25px 30px;
+}
+
+.blocmenuresto{/* Entrées/plats/desserts */
+  background-color: #ffffff;;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  box-shadow: 0 0 7px #c1c1c1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Description des restaurants sur la page des restaurants */
+
+.resto1entree{
+  position: relative; top: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.resto1entree h3{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  color: black;
+}
+
+.resto1entree p{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  position: relative; bottom: 15px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.prixmenuresto{
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5px;
+  color: black;
+}
+
+/* Bord coulissant vert */
+
+.checkedgreen{
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  margin: -16px -75px -16px 15px;
+  width: 60px;
+  justify-content: center;
+}
+
+.iconecheck i{
+  margin: auto;
+  color: #ffffff;
+}
+
+.commander { /* Bouton pour finaliser sa commande sur les pages des restaurants*/
+  cursor: pointer;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  flex-shrink: 0;
+  width: 200px;
+  height: 50px;
+  position: relative; top: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+.commander a{
+  text-decoration: none;
+  color: white;
+  position: relative; top: 15px;
+}
+
+/* Bloc Nouveau */
+
+.nouveau{
+  margin-top: -100px;
+  float: right;
+}
+
+.nouveau p{
+  position: relative; top: -75px;
+  right: 15px;
+  padding: 7.5px;
+  height: 15px;
+  width: 60px;
+  font-size: 15px;
+  color: #0b916f;
+  background-color: #99E2D0;
+  font-weight: 600;
+}
+
+/* Description pour les restaurants sur la page d'accueil */
+
+.descriptionresto{
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: -10px;
+  gap: 5px;
+  font-size: 17px;
+  color: black;
+}
+
+.widthresto{
+  width: 70%;
+}
+
+.descriptionresto div{
+  margin-top: -20px;
+}
+
+.descriptionresto h3{
+  font-size: 18px;
+}
+
+/* îcone coeur */
+
+.iconeheart{/* Heart sur la page d'accueil */
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  float: right;
+  font-size: 20px !important;
+  position: relative; bottom: 30px;
+  margin-right: 20px;
+  color: black;
+  cursor: default;
+}
+
+.iconeheartresto{/* Heart sur la page des restaurants */
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  float: right;
+  font-size: 25px !important;
+  position: relative; bottom: 30px; right: 40px;
+  color: black;
+  cursor: default;
+}
+
+.heart1{
+  cursor: pointer;
+  z-index: 1;
+  height: 20px;
+}
+
+.heart2{
+  cursor: pointer;
+  height: 20px;
+  position: relative; top: -23px; left: -1px;
+  color: transparent;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.heightheartresto{
+  height: 25px;
+}
+
+.positionheart2{
+  position: relative; top: -29px; left: 0px;
+}
+
+/* Footer */
+
+.footer {
+  height: 210px;
+  background-color: #353535;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer h2{
+  margin-left: 20px;
+  color: rgb(245, 245, 245);
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.textfooter2 {
+  color: rgb(245, 245, 245);
+  height: 35px;
+  font-size: 14px;
+}
+
+.footer-margin {
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.footer-margin3{
+  float: right;
+  margin-top: -60px;
+  margin-right: 20px;
+}
+
+.footer-margin2 {
+  margin-left: 7px;
+}
+
+.footer-taille {
+  height: 150px;
+}
+
+.footer-color {
+  font-weight: 500;
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+
+/* Media queries desktop */
+
+@media screen and (min-width: 1024px) {
+  .position{
+    margin-top: 0;
+  }
+  .logo{
+    z-index: 0;
+    background: #ffffff;;
+    position: relative !important;
+  }
+  .fonctionnement{
+    padding: 25px 20px 5px 20px;
+  }
+  .restaurants{
+    flex-direction: row;
+    justify-content: center;
+    padding: 75px 20px 75px 20px;
+  }
+  .restaurants h2{
+    display: none;
+  }
+  .h2resto{
+    color: black;
+    display: block;
+    position: relative; top: 70px;
+    text-align: center;
+  }
+  .marginresto{
+    margin-top: 0;
+  }
+  .blocresto{
+    width: 100%;
+  }
+  .restaurants article{
+    width: 40%;
+  }
+  .carteresto{
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 20px 25px 40px;
+  }
+
+  .entreemenuresto{
+    flex: 1;
+    padding: 0 20px 0 20px;
+  }
+
+  .footer h2{
+    margin-top: 43px;
+  }
+  .footer-margin{
+    flex-direction: row;
+    margin-top: 45px;
+    gap: 50px;
+  }
+  .footer-margin3{
+    margin-top: -70px;
+    margin-right: 25px;
+  }
+  .footer{
+    height: 100px;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .footer-taille {
+    height: 40px;
+  }
+}
+
+/* Media query ajustement */
+
+@media screen and (max-width: 735px) {
+  .fonctionnement h2{
+    margin-left: -140px;
+  }
+}

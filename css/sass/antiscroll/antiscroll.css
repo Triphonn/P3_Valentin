@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+  -webkit-animation-name: antiscroll;
+          animation-name: antiscroll;
+  -webkit-animation-duration: 100ms;
+          animation-duration: 100ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes antiscroll {
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes antiscroll {
+  to {
+    overflow: visible;
+  }
+}
+/*# sourceMappingURL=antiscroll.css.map */
